@@ -47,6 +47,8 @@ module.exports = {
       },
     ],
     "lines-between-class-members": "warn",
+    "jsdoc/require-returns-type": "off",
+    "jsdoc/require-param-type": "off",
     "import/no-unresolved": "off",
     "import/named": "off",
     "sort-imports": "warn",
