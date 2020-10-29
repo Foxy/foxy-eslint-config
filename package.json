@@ -1,0 +1,46 @@
+{
+  "name": "@foxy.io/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared ESLint configuration for Foxy projects.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foxy/foxy-eslint-config.git"
+  },
+  "author": "Foxy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Foxy/foxy-eslint-config/issues"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "homepage": "https://github.com/Foxy/foxy-eslint-config#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-lit-a11y": "^1.0.1",
+    "eslint-plugin-sort-class-members": "^1.8.0",
+    "eslint-plugin-typescript-sort-keys": "^1.5.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7",
+    "prettier": ">= 2",
+    "typescript": ">= 4"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
