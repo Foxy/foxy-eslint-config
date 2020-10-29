@@ -40,7 +40,7 @@
     "semantic-release": "^17.2.2"
   },
   "release": {
-    "branches": ["main", "next"]
+    "branches": ["main"]
   },
   "config": {
     "commitizen": {
