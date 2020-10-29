@@ -39,6 +39,9 @@
     "husky": "^4.3.0",
     "semantic-release": "^17.2.2"
   },
+  "release": {
+    "branches": ["main", "next"]
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
